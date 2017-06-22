@@ -1,0 +1,20 @@
+<div *ngIf="user"  class="usuario">
+  <md-card>
+    <md-card-title-group>        
+      <md-card-title>{{user.lastName}},{{user.firstName}}</md-card-title>    
+      <md-card-subtitle>BIO</md-card-subtitle>    
+      <img md-card-lg-image src="{{user.avatar}}">
+    </md-card-title-group>  
+    <md-card-content>
+        <p>{{user.bio}}</p>
+        
+    </md-card-content>
+     <md-card-actions>
+        <button  md-icon-button (click)="back()" md-button>
+          <md-icon>arrow_back</md-icon>
+        </button>
+      </md-card-actions>
+  </md-card>
+  
+
+</div>
